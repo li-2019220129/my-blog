@@ -1,0 +1,31 @@
+name: Deploy VuePress Blog
+
+on:
+  push:
+    branches:
+      - main  # 监听 main 分支推送事件
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.X  # 根据你项目实际 Node 版本调整
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build VuePress site
+        run: yarn build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .vuepress/dist
