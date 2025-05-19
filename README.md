@@ -6,7 +6,7 @@ modules:
   - MdContent
   - Footer
 bannerBrand:
-  bgImage: '/public/images/bg.jpg'
+  bgImage: 'bg.jpg'
   title: Hello, my name is Li Zhiyang 
   description: A simple blog site.
   tagline: 「即使天无雨天，我亦留此地。」

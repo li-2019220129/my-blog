@@ -3,4 +3,4 @@
 .vuepress/dist
 node_modules
 .history
-.github
+.github 
