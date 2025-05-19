@@ -3,7 +3,7 @@ name: Deploy VuePress Blog
 on:
   push:
     branches:
-      - main  # 监听 main 分支推送事件
+      - master  # 监听 main 分支推送事件
 
 jobs:
   build-and-deploy:
@@ -28,4 +28,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
           publish_dir: .vuepress/dist
