@@ -19,7 +19,7 @@ jobs:
           node-version: 20.X  # 根据你项目实际 Node 版本调整
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install
 
       - name: Build VuePress site
         run: yarn build
