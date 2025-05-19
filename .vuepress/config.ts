@@ -4,6 +4,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 
 export default defineUserConfig({
+  base: '/my-blog/',
   title: "Li Zhiyang's Blog",
   description: "Just playing around",
   bundler: viteBundler(),
