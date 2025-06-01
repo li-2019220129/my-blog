@@ -18,29 +18,29 @@ export default defineUserConfig({
     docsDir: "example",
     lastUpdatedText: "",
     // series 为原 sidebar
-    series: {
-      "/docs/theme-reco/": [
-        {
-          text: "module one",
-          children: ["home", "theme"],
-        },
-        {
-          text: "module two",
-          children: ["api", "plugin"],
-        },
-      ],
-    },
+    // series: {
+    //   "/docs/theme-reco/": [
+    //     {
+    //       text: "module one",
+    //       children: ["home", "theme"],
+    //     },
+    //     {
+    //       text: "module two",
+    //       children: ["api", "plugin"],
+    //     },
+    //   ],
+    // },
     navbar: [
-      { text: "Home", link: "/" },
-      { text: "Categories", link: "/categories/reco/1.html" },
-      { text: "Tags", link: "/tags/tag1/1.html" },
-      {
-        text: "Docs",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
-      },
+      { text: "首页", link: "/" },
+      { text: "博客", link: "/categories/reco/1.html" },
+      { text: "标签", link: "/tags/tag1/1.html" },
+      // {
+      //   text: "Docs",
+      //   children: [
+      //     { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
+      //     { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
+      //   ],
+      // },
     ],
     // bulletin: {
     //   body: [

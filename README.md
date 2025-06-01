@@ -9,7 +9,7 @@ bannerBrand:
   bgImage: 'bg.jpg'
   title: Hello, my name is Li Zhiyang 
   description: A simple blog site.
-  tagline: 「即使天无雨天，我亦留此地。」
+  tagline: 「即使天无雨，我亦留此地。」
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/vuepress-reco/vuepress-theme-reco' }
 blog:
